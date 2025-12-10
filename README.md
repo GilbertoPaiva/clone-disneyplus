@@ -127,32 +127,49 @@ As imagens atuais são placeholders do serviço `via.placeholder.com` com as pro
 
 ## 🌐 Deploy
 
-Este projeto pode ser facilmente publicado em:
+Este projeto está configurado para ser facilmente publicado em várias plataformas:
 
-### GitHub Pages
+### GitHub Pages (Automático com GitHub Actions)
 
-1. Faça o build: `npm run build`
-2. Faça commit dos arquivos da pasta `dist`
-3. Configure o GitHub Pages nas configurações do repositório
+O projeto já está configurado com GitHub Actions para deploy automático:
 
-### Netlify
+1. Vá em Settings > Pages no seu repositório
+2. Em "Source", selecione "GitHub Actions"
+3. Faça push para a branch main/master
+4. O workflow `.github/workflows/deploy.yml` será executado automaticamente
+5. Sua página estará disponível em `https://[seu-usuario].github.io/[nome-do-repo]`
 
-1. Conecte seu repositório ao Netlify
-2. Configure o comando de build: `npm run build`
-3. Configure o diretório de publicação: `/` (root, pois o index.html está na raiz)
-4. Deploy automático a cada push
+### Netlify (Deploy Automático)
 
-### Vercel
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 
-1. Instale a CLI do Vercel: `npm i -g vercel`
-2. Execute: `vercel`
-3. Siga as instruções do prompt
+Ou manualmente:
+1. Faça login no [Netlify](https://netlify.com)
+2. Conecte seu repositório GitHub
+3. O arquivo `netlify.toml` já está configurado
+4. Clique em "Deploy site"
+5. Deploy automático a cada push na branch principal
+
+### Vercel (Deploy Rápido)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+Ou via CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+O arquivo `vercel.json` já está configurado para o build correto.
 
 ### Cloudflare Pages
 
-1. Conecte seu repositório ao Cloudflare Pages
-2. Configure o comando de build: `npm run build`
-3. Configure o diretório de publicação: `/`
+1. Faça login no [Cloudflare Pages](https://pages.cloudflare.com/)
+2. Conecte seu repositório GitHub
+3. Configure:
+   - Build command: `npm run build`
+   - Build output directory: `/`
+4. Clique em "Save and Deploy"
 
 ## 📝 Boas Práticas Seguidas
 
