@@ -63,8 +63,8 @@ Este projeto é uma landing page responsiva para o filme de ficção científica
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/GilbertoPaiva/clone-disneyplus.git
-cd clone-disneyplus
+git clone https://github.com/GilbertoPaiva/clone-disneyplus.git landing-page-homem-da-terra
+cd landing-page-homem-da-terra
 ```
 
 2. Instale as dependências:
