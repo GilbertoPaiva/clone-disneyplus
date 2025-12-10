@@ -1,7 +1,7 @@
 {
-  "name": "clone-disneyplus",
+  "name": "landing-page-homem-da-terra",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page para o filme O Homem da Terra (The Man from Earth)",
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/GilbertoPaiva/clone-disneyplus.git"
   },
-  "keywords": [],
+  "keywords": ["landing-page", "movie", "the-man-from-earth"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
